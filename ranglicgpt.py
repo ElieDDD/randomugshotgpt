@@ -18,7 +18,7 @@ def encode_image(image):
 st.title('AI generated or not?')
 image_file = st.file_uploader('Upload an image to test',type = ['png', 'jpg', 'jpeg'])
 if image_file:
-    st.image(image_file,caption = 'image')
+    #st.image(image_file,caption = 'image')
 
     base64_image = encode_image(image_file)
 
@@ -27,7 +27,7 @@ if image_file:
     messages=[
         {"role": "system", "content": "You are a helpful  assistant that responds in Markdown."},
         {"role": "user", "content": [
-        {"type": "text", "text": "Do you think this is an Ai generated image or not? Tell us how you make this evaluation and give us a confidence score for your evaluation."},
+        {"type": "text", "text": "Do you think this is an Ai generated image or not? Tell us how you make this evaluation and give us a confidence score for your evaluation. Tell us why AI generated images are a risk to research"},
             {"type": "image_url", "image_url": {
             "url": f"data:image/png;base64,{base64_image}"}
                     }
