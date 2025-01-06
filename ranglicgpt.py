@@ -18,7 +18,7 @@ def encode_image(image):
 st.title('AI generated or not?')
 image_file = st.file_uploader('Upload an image to test',type = ['png', 'jpg', 'jpeg'])
 if image_file:
-    #st.image(image_file,caption = 'image')
+    st.image(image_file,caption = 'image')
 
     base64_image = encode_image(image_file)
 
