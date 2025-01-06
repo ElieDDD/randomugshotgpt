@@ -11,8 +11,8 @@ MODEL = 'gpt-4o'
 api_key = st.secrets["OPENAI_API_KEY"]
 client = OpenAI(api_key = key)
 
-#def encode_image(image):
-    #return base64.b64encode(image.read()).decode('utf-8')
+def encode_image(image):
+    return base64.b64encode(image.read()).decode('utf-8')
 
 st.title('Image Analyzer')
 #image_file = st.file_uploader('Upload an image file',type = ['png', 'jpg', 'jpeg'])
