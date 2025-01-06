@@ -1,6 +1,6 @@
 import streamlit as st 
 import os 
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 import base64
 from openai import OpenAI
 from PIL import Image
