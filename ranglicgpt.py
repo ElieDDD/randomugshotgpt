@@ -17,7 +17,7 @@ def encode_image(image):
 st.title('Image Analyzer')
 #image_file = st.file_uploader('Upload an image file',type = ['png', 'jpg', 'jpeg'])
 
-image_file = Image.open('mug.png')
+image_file = Image.open("mug.png")
 
 #st.image_file(image, caption='Sunrise by the mountains')
 if image_file:
